@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Галерея изображений</title>
+</head>
+<body>
+    <div><h1>Галерея изображений</h1></div>
+    <div onmouseover="btn_show()" onmouseout="btn_noshow()" class="wrapper">
+        <script src="./index.js"></script>
+
+        <div id="left" onclick="image(0)" class="left_right" style="margin-left: 10px; position: absolute; display: none;">
+            <img src="img/left.png">
+        </div>
+
+        <div id="right" onclick="image(1)" class="left_right" style="margin-left: 990px; position: absolute; display: none;">
+            <img src="img/right.png">
+        </div>
+    </div>
+    <center><p style="font-size: 22px; color: bisque; font-weight: bold;" id="num_img"></p></center>
+    <center>
+        <span class="myButton" onclick="image(0)">&lt;</span>
+        <span class="myButton" onclick="image(1)">&gt;</span>
+    </center>
+</body>
+</html>
